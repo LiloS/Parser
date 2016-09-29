@@ -12,13 +12,15 @@ namespace ParserRun {
         static void Main(string[] args) {
             try {
                 Parser parser = new MicrosoftWordParser();
-                parser.Parse(@"C:\Users\Мария\Downloads\Zdravstvuyte.docx");
+                parser.Parse(@"D:\Study\Blekanov\DocTest\Numbers_SpecialSymbols.docx");
 
-                parser.SaveTextToFile(@"C:\Users\Мария\Documents\test.txt");
+                parser.SaveTextToFile(@"D:\Study\Blekanov\ResultDocuments\Numbers_SpecialSynbols.txt");
+              
 
             } catch (Exception e) {
                 Console.WriteLine(e);
             }
+          Console.WriteLine("Process finished. Press any key to continue.");
             Console.ReadLine();
 
         }
